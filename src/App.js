@@ -1,11 +1,11 @@
 import './App.css';
 import { BrowserRouter as Router } from 'react-router-dom'
-import NavBarRoutes from './Components/NavBarRoutes';
-import NavBar from './Components/NavBar';
+import NavBarRoutes from './Components/NavBarRoutes'
+import NavBar from './Components/NavBar'
 import { Link } from 'react-router-dom'
 
-
 function App() {
+
   return (
     <Router>
       <div className='container'>
