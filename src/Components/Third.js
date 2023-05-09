@@ -9,7 +9,7 @@ export default function Third() {
   useEffect(() => {
     fetch(optionsURL)
       .then(res => res.json())
-      .then(optionsAPI => setOptions([optionsAPI]))
+      .then(optionsAPI => setOptions(optionsAPI))
   }, [])
 
   return (

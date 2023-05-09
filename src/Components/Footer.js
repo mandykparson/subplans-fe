@@ -10,17 +10,6 @@ export default function Footer() {
   
     const handleSubmit = (event) => {
         event.preventDefault()
-        // console.log(`Title: ${title}`)
-        // console.log(`Grade: ${grade}`)
-        // console.log(`Overview: ${overview}`)
-        // console.log(`Link: ${link}`)
-
-        const newSubplan = {
-            'title': title,
-            'grade': grade,
-            'overview': overview, 
-            'link': link
-        }
 
         fetch(subplansURL, {
             method: 'POST', 

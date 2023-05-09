@@ -9,10 +9,12 @@ export default function OptionCard(props) {
     };
 
   return (
-    <div className='option-card'>
-        <h4>{props.option.title}</h4>
-        <p>{props.option.overview}</p>
-        <button onClick={handleRedirect}>Select</button>
+    <div className='one-half column'>
+      <div className='option-card'>
+          <h4>{props.option.title}</h4>
+          <p>{props.option.overview}</p>
+          <button onClick={handleRedirect}>Select</button>
+      </div>
     </div>
   )
 }
