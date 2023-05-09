@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
-import OptionCards from './OptionCards'
+import OptionCards from '../Cards/OptionCards'
 
 export default function Fifth() {
 

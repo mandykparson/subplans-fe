@@ -1,38 +1,20 @@
 import './App.css';
 import { BrowserRouter as Router } from 'react-router-dom'
-import NavBarRoutes from './Components/NavBarRoutes'
-import NavBar from './Components/NavBar'
-import { Link } from 'react-router-dom'
-import Footer from './Components/Footer';
+import NavBarRoutes from './Components/NavBar/NavBarRoutes';
+import NavBar from './Components/NavBar/NavBar';
+import Hero from './Components/Hero/Hero';
+import Footer from './Components/Footer/Footer'
+
 
 function App() {
 
   return (
     <Router>
-      <div className='container'>
-        <div className='row'>
-          <Link 
-            to="/"
-            activeClassName="active-link"
-            style={{ textDecoration: 'none', color: '#333' }}
-            exact> 
-              <h1>Subplans</h1>
-          </Link>
-        </div>
+      <div className='website-content-main'>
+        <Hero />
         <NavBar />
-        <div className='wrapper'>
-          <NavBarRoutes />
-        </div>
-        <div className='row'>
-          <div className='footer'>
-            <Link 
-                to="/footer"
-                activeClassName="active-link"
-                exact> 
-                    Contribute Your Own Subplan
-            </Link>
-        </div>
-        </div>
+        <NavBarRoutes />
+        <Footer />
       </div>
     </Router>
   );

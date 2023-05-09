@@ -3,13 +3,13 @@ import { Link } from 'react-router-dom'
 
 export default function NavBar() {
   return (
-    <div className='row'>
-        <div className='nav-bar'>
+    <div>
+        <div>
             <div>
                 <Link 
                     to="/first"
                     activeClassName="active-link"
-                    style={{ textDecoration: 'none', color: 'white' }}
+                    style={{ textDecoration: 'none' }}
                     exact> 
                         First
                 </Link>
@@ -18,7 +18,7 @@ export default function NavBar() {
                 <Link 
                     to="/second"
                     activeClassName="active-link"
-                    style={{ textDecoration: 'none', color: 'white' }}
+                    style={{ textDecoration: 'none' }}
                     exact> 
                         Second
                 </Link>
@@ -27,7 +27,7 @@ export default function NavBar() {
                 <Link 
                     to="/third"
                     activeClassName="active-link"
-                    style={{ textDecoration: 'none', color: 'white' }}
+                    style={{ textDecoration: 'none' }}
                     exact> 
                         Third
                 </Link>
@@ -36,7 +36,7 @@ export default function NavBar() {
                 <Link 
                     to="/forth"
                     activeClassName="active-link"
-                    style={{ textDecoration: 'none', color: 'white' }}
+                    style={{ textDecoration: 'none' }}
                     exact> 
                         Forth
                 </Link>
@@ -45,7 +45,7 @@ export default function NavBar() {
                 <Link 
                     to="/fifth"
                     activeClassName="active-link"
-                    style={{ textDecoration: 'none', color: 'white' }}
+                    style={{ textDecoration: 'none' }}
                     exact> 
                         Fifth
                 </Link>
