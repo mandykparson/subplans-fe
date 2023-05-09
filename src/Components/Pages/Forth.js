@@ -1,11 +1,11 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
-import OptionCards from './OptionCards'
+import OptionCards from '../Cards/OptionCards'
 
-export default function Second() {
+export default function Forth() {
 
   const [ options, setOptions ] = useState([])
-  const [ optionsURL ] = useState('http://localhost:3001/subplan_options/second')
+  const [ optionsURL ] = useState('http://localhost:3001/subplan_options/forth')
 
   useEffect(() => {
     fetch(optionsURL)
@@ -15,6 +15,7 @@ export default function Second() {
 
   return (
     <div>
+        <p>forth grade options</p>
         <OptionCards options={options} />
     </div>
   )

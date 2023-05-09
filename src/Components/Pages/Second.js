@@ -1,10 +1,11 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
-import OptionCards from './OptionCards'
+import OptionCards from '../Cards/OptionCards'
 
-export default function Third() {
+export default function Second() {
+
   const [ options, setOptions ] = useState([])
-  const [ optionsURL ] = useState('http://localhost:3001/subplan_options/third')
+  const [ optionsURL ] = useState('http://localhost:3001/subplan_options/second')
 
   useEffect(() => {
     fetch(optionsURL)
@@ -14,7 +15,6 @@ export default function Third() {
 
   return (
     <div>
-        <p>third grade options</p>
         <OptionCards options={options} />
     </div>
   )
