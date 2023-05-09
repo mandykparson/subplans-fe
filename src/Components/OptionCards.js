@@ -5,12 +5,14 @@ export default function OptionCards(props) {
 
     const renderOptionCards = () => {
         return props.options.map(option => {
-            return <OptionCard 
+            return <OptionCard
                     key={option.id}
                     option={option}/>
         })
     }
   return (
-    <div className='container'>{renderOptionCards()}</div>
+    <div className='row'>
+      <div className='option-cards'>{renderOptionCards()}</div>
+    </div>
   )
 }

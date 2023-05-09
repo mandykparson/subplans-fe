@@ -14,19 +14,24 @@ function App() {
           <Link 
             to="/"
             activeClassName="active-link"
+            style={{ textDecoration: 'none', color: '#333' }}
             exact> 
               <h1>Subplans</h1>
           </Link>
         </div>
         <NavBar />
-        <NavBarRoutes />
-        <div className='footer'>
-          <Link 
-              to="/footer"
-              activeClassName="active-link"
-              exact> 
-                  Contribute Your Own Subplan
-          </Link>
+        <div className='wrapper'>
+          <NavBarRoutes />
+        </div>
+        <div className='row'>
+          <div className='footer'>
+            <Link 
+                to="/footer"
+                activeClassName="active-link"
+                exact> 
+                    Contribute Your Own Subplan
+            </Link>
+        </div>
         </div>
       </div>
     </Router>

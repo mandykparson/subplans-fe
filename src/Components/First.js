@@ -10,12 +10,12 @@ export default function First() {
   useEffect(() => {
     fetch(optionsURL)
       .then(res => res.json())
-      .then(optionsAPI => setOptions([optionsAPI]))
+      .then(optionsAPI => setOptions(optionsAPI))
   }, [])
 
   return (
-    <div>
-        <p>first grade options</p>
+    <div className='page-content'>
+        <p className='sub-header'>first grade options</p>
         <OptionCards options={options} />
     </div>
   )
