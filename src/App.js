@@ -4,17 +4,28 @@ import NavBarRoutes from './Components/NavBar/NavBarRoutes';
 import NavBar from './Components/NavBar/NavBar';
 import Hero from './Components/Hero/Hero';
 import Footer from './Components/Footer/Footer'
+import { useState } from 'react';
+import NotLoggedIn from './Components/NotLoggedIn/NotLoggedIn';
 
 
 function App() {
+
+  const [ login, setLogin ] = useState(false)
 
   return (
     <Router>
       <div className='website-content-main'>
         <Hero />
-        <NavBar />
-        <NavBarRoutes />
-        <Footer />
+        { login ? 
+            <div>
+              <NavBar />
+              <NavBarRoutes />
+              <Footer />
+            </div> 
+          :
+          <NotLoggedIn 
+            setLogin={setLogin}/> 
+      }
       </div>
     </Router>
   );

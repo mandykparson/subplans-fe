@@ -1,16 +1,17 @@
 import React from 'react'
+import './Hero.css'
 import { Link } from 'react-router-dom'
 
 export default function Hero() {
 
   return (
-    <div>
+    <div className='hero'>
         <Link 
             to="/"
             activeClassName="active-link"
-            style={{ textDecoration: 'none' }}
+            style={{ textDecoration: 'none', color: '#0B241A'}}
             exact> 
-                <h1>Subplans</h1>
+                <h1>Subplan Helper</h1>
         </Link>
     </div>
   )

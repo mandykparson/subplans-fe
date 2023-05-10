@@ -1,3 +1,35 @@
+--root {
+  --deep-red: #AD1D4F;
+  --yellow: #FAEF76;
+  --red: #FA1162;
+  --blue: #2AD0FA;
+  --deep-blue: #038BAD;
+  --text-color: #0B241A;
+}
+
 .website-content-main {
-  margin: 1em;
+  color: var(--text-color);
+  font-family: 'Lato', sans-serif;
+}
+
+/* Breakpoints */
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 16px;
+  }
+  /* Add more styles for smaller screens here */
+}
+
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+  body {
+    font-size: 18px;
+  }
+  /* Add more styles for medium-sized screens here */
+}
+
+@media only screen and (min-width: 900px) {
+  body {
+    font-size: 20px;
+  }
+  /* Add more styles for larger screens here */
 }

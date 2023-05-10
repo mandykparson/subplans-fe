@@ -1,0 +1,32 @@
+.sub-hero-login{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    background-color: #FAEF76;
+    height: 25em;
+    align-items: center;
+}
+
+.two-columns {
+    width: 45%;
+    padding-left: 1.5em;
+}
+
+button {
+    background-color: #AD1D4F;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+    transition-duration: 0.2s;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #FA1162;
+}
+
