@@ -15,9 +15,9 @@ function App() {
   return (
     <Router>
       <div className='website-content-main'>
-        <Hero />
         { login ? 
             <div>
+              <Hero />
               <NavBar />
               <NavBarRoutes />
               <Footer />

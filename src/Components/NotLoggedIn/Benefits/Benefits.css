@@ -2,17 +2,19 @@
     background-color: #2AD0FA;
     width: 100%;
     display: flex;
-    height: 28em;
+    min-height:fit-content;
     flex-direction: column;
     color: white;
     justify-content: center;
     align-items: center;
+    padding-bottom: 1.5em;
+    padding-top: 1.5em;
 }
 
 .row {
     display: flex;
     flex-direction: row;
-    width: 80%;
+    width: 90%;
     justify-content: space-around;
     margin: 1em 0 1em 0;
 }
@@ -22,8 +24,8 @@
     border: none;
     border-radius: 15px;
     color: white;
-    height: 6em;
-    width: 14em;
+    min-height: fit-content;
+    width: 35%;
     padding: 2em;
     text-decoration: none;
     font-size: 1em;
