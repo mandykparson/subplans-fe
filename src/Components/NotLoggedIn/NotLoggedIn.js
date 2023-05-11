@@ -13,7 +13,7 @@ export default function NotLoggedIn({ setLogin }) {
       <HowItWorks />
       <Benefits />
       <FAQs />
-      <FooterLogin />
+      <FooterLogin setLogin={setLogin}/>
     </div>
   )
 }

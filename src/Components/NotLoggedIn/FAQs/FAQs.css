@@ -1,5 +1,24 @@
 .faqs{
+    display: flex;
+    flex-direction: column;
     background-color: #FA1162;
-    margin: 0 1.5em 0 1.5em;
-    width: 95%;
+    width: 100%;
+}
+
+.header{
+    padding-top: 1.5em;
+    padding-left: 2em;
+}
+.questions-box{
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
+    align-self: center;
+    padding-bottom: 1.5em;
+}
+
+.question{
+    width: 30%;
+    padding-right: .5em;
+    padding-left: .5em;
 }

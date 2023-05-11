@@ -3,3 +3,9 @@
     flex-direction: column;
     background-color: black;
 }
+
+h2 { 
+    font-family: 'Darumadrop One', cursive;
+    margin: 0;
+    font-size: 2em; 
+}

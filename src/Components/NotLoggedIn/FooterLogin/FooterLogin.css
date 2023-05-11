@@ -1,5 +1,15 @@
 .footer-login {
-    background-color: #AD1D4F;
-    margin: 0 1.5em 0 1.5em;
-    width: 95%;
+    background-color: #FAEF76;;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10em;
+
+}
+
+.footer-login-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
